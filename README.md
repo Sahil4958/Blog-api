@@ -61,7 +61,9 @@ npm install
 Create a .env file in project root:
 
 PORT=8000
+
 MONGO_URI=mongodb://localhost:27017/Blog-Api
+
 JWT_SECRETKEY=your_super_secret_key
 
 

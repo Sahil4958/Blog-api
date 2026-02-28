@@ -1,7 +1,6 @@
 import bcrypt from "bcryptjs";
 import { User } from "./user.schema";
 import { IUser } from "./user.interface";
-
 import { messages } from "../../utils/messages";
 import jwt from "jsonwebtoken";
 import config from "../../config";

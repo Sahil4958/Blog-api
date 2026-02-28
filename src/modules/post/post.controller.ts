@@ -51,7 +51,7 @@ const updatePostById = async (req: Request, res: Response) => {
   try {
     const userId = req.userInfo?.id;
     if (!userId) {
-      return apiResponse(res, StatusCodes.UNAUTHORIZED, "Unauthorized");
+      return apiResponse(res, StatusCodes.UNAUTHORIZED, messages.UNAUTHORIZED);
     }
 
     const postId = req.params.id as string;
@@ -68,7 +68,7 @@ const deletePostById = async (req: Request, res: Response) => {
     const userId = req.userInfo?.id;
 
     if (!userId) {
-      return apiResponse(res, StatusCodes.UNAUTHORIZED, "Unauthorized");
+      return apiResponse(res, StatusCodes.UNAUTHORIZED, messages.UNAUTHORIZED);
     }
 
     const postId = req.params.id as string;

@@ -28,7 +28,7 @@ export const authorization = async (
 
     if (post.user.toString() !== userId) {
       return res.status(StatusCodes.FORBIDDEN).json({
-        message: "You can only modify your own post",
+        message: messages.USER_RESTRICTION,
       });
     }
 

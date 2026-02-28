@@ -27,4 +27,5 @@ router.patch(
 );
 
 router.delete("/:id", authMiddleware, authorization, deletePostById);
+
 export default router;

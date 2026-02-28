@@ -13,9 +13,11 @@ import { authorization } from "../../middleware/authorization";
 
 const router = express.Router();
 
-router.post("/add", authMiddleware, validate(createPostSchema), addPost);
 router.get("/", authMiddleware, getAll);
 router.get("/:id", authMiddleware, getPost);
+
+router.post("/add", authMiddleware, validate(createPostSchema), addPost);
+
 router.patch(
   "/:id",
   authMiddleware,

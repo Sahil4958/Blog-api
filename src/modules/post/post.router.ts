@@ -1,4 +1,4 @@
-import { authMiddleware } from "./../../middleware/authMiddleware";
+import { authMiddleware } from "../../middleware/authMiddleware";
 import express from "express";
 import { validate } from "../../utils/validation";
 import { createPostSchema, updatePostSchema } from "./post.validator";
@@ -24,10 +24,5 @@ router.patch(
   updatePostById,
 );
 
-router.delete(
-  "/:id",
-  authMiddleware,
-  authorization,
-  deletePostById,
-);
+router.delete("/:id", authMiddleware, authorization, deletePostById);
 export default router;

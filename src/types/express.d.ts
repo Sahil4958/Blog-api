@@ -1,4 +1,4 @@
-import type { IDecoded } from "../module/user/user.interface";
+import type { IDecoded } from "../modules/user/user.interface";
 
 declare global {
   namespace Express {

@@ -51,7 +51,7 @@ import { Request, Response, NextFunction } from "express";
 import { StatusCodes } from "http-status-codes";
 import { apiResponse } from "../utils/response";
 import { messages } from "../utils/messages";
-import { IDecoded } from "../module/user/user.interface";
+import { IDecoded } from "../modules/user/user.interface";
 import config from "../config";
 
 export const authMiddleware = (

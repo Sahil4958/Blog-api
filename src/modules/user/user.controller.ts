@@ -26,7 +26,7 @@ const login = async (req: Request, res: Response) => {
 
     return apiResponse(
       res,
-      StatusCodes.CREATED,
+      StatusCodes.OK,
       messages.USER_LOGIN_SUCCESS,
       user,
     );

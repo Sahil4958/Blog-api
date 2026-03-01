@@ -6,8 +6,7 @@ export const messages = {
   USER_NOT_FOUND: "User not found.",
   INCORRECT_PASSWORD: "Incorrect password. Please try again.",
   TOKENLESS_ERROR: "Authentication token not provided.",
-  INVALID_TOKEN:
-    "Access denied, token verification failed. Please log in to continue.",
+  INVALID_TOKEN: "Invalid or expired token.",
   UNAUTHORIZED: "Unauthorized User",
   USER_RESTRICTION: "You can only modify your own post",
 

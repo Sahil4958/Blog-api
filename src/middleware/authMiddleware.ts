@@ -29,6 +29,6 @@ export const authMiddleware = (
     req.userInfo = decoded;
     next();
   } catch (error) {
-    apiResponse(res, StatusCodes.UNAUTHORIZED, "Invalid or expired token");
+    apiResponse(res, StatusCodes.UNAUTHORIZED, messages.INVALID_TOKEN);
   }
 };

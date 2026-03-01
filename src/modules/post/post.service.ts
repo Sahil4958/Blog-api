@@ -53,7 +53,6 @@ const updatePost = async (postId: string, data: IPost) => {
   if (!postId) {
     throw new Error(messages.POST_NOT_FOUND);
   }
-  console.log(postId, "post");
 
   const updatedPost = await Post.findByIdAndUpdate(postId, data, {
     new: true,

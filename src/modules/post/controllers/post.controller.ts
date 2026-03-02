@@ -7,7 +7,7 @@ import {
   getAllPost,
   getPostById,
   updatePost,
-} from "../post.service";
+} from "../services/post.service";
 import { Request, Response } from "express";
 import { messages } from "../../../utils/messages";
 

@@ -1,4 +1,5 @@
 import { StatusCodes } from "http-status-codes";
+import { Request, Response } from "express";
 import { handleError } from "../../../utils/error";
 import { apiResponse } from "../../../utils/response";
 import {
@@ -8,7 +9,7 @@ import {
   getPostById,
   updatePost,
 } from "../services/post.service";
-import { Request, Response } from "express";
+
 import { messages } from "../../../utils/messages";
 
 const addPost = async (req: Request, res: Response) => {

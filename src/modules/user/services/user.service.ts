@@ -1,9 +1,10 @@
 import bcrypt from "bcryptjs";
-import { User } from "./user.schema";
-import { IUser } from "./user.interface";
-import { messages } from "../../utils/messages";
 import jwt from "jsonwebtoken";
-import config from "../../config";
+import { User } from "../models/user.schema";
+import { IUser } from "../interfaces/user.interface";
+import { messages } from "../../../utils/messages";
+
+import config from "../../../config";
 
 const createUser = async (data: IUser) => {
   const { name, email, password } = data;

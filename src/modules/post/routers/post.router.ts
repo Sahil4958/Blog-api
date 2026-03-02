@@ -1,15 +1,15 @@
-import { authMiddleware } from "../../middleware/authMiddleware";
+import { authMiddleware } from "../../../middleware/authMiddleware";
 import express from "express";
-import { validate } from "../../utils/validation";
-import { createPostSchema, updatePostSchema } from "./post.validator";
+import { validate } from "../../../utils/validation";
+import { createPostSchema, updatePostSchema } from "../validators/post.validator";
 import {
   addPost,
   deletePostById,
   getAll,
   getPost,
   updatePostById,
-} from "./post.controller";
-import { authorization } from "../../middleware/authorization";
+} from "../controllers/post.controller";
+import { authorization } from "../../../middleware/authorization";
 
 const router = express.Router();
 

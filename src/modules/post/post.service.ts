@@ -1,6 +1,6 @@
-import { Post } from "../models/post.schema";
-import IPost from "../interfaces/post.interface";
-import { messages } from "../../../utils/messages";
+import { Post } from "../post/models/post.schema";
+import IPost from "../post/interfaces/post.interface"
+import { messages } from "../../utils/messages";
 
 const createPost = async (userId: string, data: IPost) => {
   const post = await Post.create({ ...data, user: userId });

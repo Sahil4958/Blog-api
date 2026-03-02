@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
 import { StatusCodes } from "http-status-codes";
-import { Post } from "../modules/post/post.schema";
+import { Post } from "../modules/post/models/post.schema";
 import { messages } from "../utils/messages";
 
 export const authorization = async (

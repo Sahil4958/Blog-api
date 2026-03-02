@@ -1,15 +1,15 @@
 import { StatusCodes } from "http-status-codes";
-import { handleError } from "../../utils/error";
-import { apiResponse } from "../../utils/response";
+import { handleError } from "../../../utils/error";
+import { apiResponse } from "../../../utils/response";
 import {
   createPost,
   deletePost,
   getAllPost,
   getPostById,
   updatePost,
-} from "./post.service";
+} from "../post.service";
 import { Request, Response } from "express";
-import { messages } from "../../utils/messages";
+import { messages } from "../../../utils/messages";
 
 const addPost = async (req: Request, res: Response) => {
   try {

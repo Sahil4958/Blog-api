@@ -1,9 +1,9 @@
 import { StatusCodes } from "http-status-codes";
-import { handleError } from "../../utils/error";
-import { apiResponse } from "../../utils/response";
-import { createUser, loginUser } from "./user.service";
+import { handleError } from "../../../utils/error";
+import { apiResponse } from "../../../utils/response";
+import { createUser, loginUser } from "../services/user.service";
 import { Request, Response } from "express";
-import { messages } from "../../utils/messages";
+import { messages } from "../../../utils/messages";
 
 const register = async (req: Request, res: Response) => {
   try {
